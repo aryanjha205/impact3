@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ...existing code... -->
+    <style>
+        /* Disable text selection */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+        }
+    </style>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <!-- ...existing code... -->
+        <main>
+            <!-- ...existing code... -->
+            <section>
+                <h2>JavaScript Notes</h2>
+                <p>JavaScript (JS) is a programming language that allows developers to create interactive web pages. It's used to make web pages more engaging by adding features like animations, interactive maps, and dropdown menus.</p>
+                <h3>What JavaScript does</h3>
+                <ul>
+                    <li>Makes static content dynamic</li>
+                    <li>Displays timely content updates</li>
+                    <li>Creates interactive maps</li>
+                    <li>Animates 2D/3D graphics</li>
+                    <li>Creates scrolling video jukeboxes</li>
+                    <li>Creates pop-ups</li>
+                    <li>Creates image carousels</li>
+                    <li>Creates click-to-show dropdown menus</li>
+                    <li>Creates dynamically changing element colors</li>
+                </ul>
+
+                <h3>Variables</h3>
+                <p>Variables are the name of memory location where we can store the data. </p>
+                <h4>Example:</h4>
+                <pre><code>let name = "Aryan";
+const age = 19;</code></pre>
+
+                <h3>Data Types</h3>
+                <p>JavaScript supports various data types including:</p>
+                <ul>
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>Object</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+                    <li>Symbol (ES6)</li>
+                </ul>
+                <h4>Example:</h4>
+                <pre><code>let str = "Hello, Aryan jha!"; // String
+let num = 100; // Number
+let bool = true; // Boolean
+let obj = { name: "Aryan jha", age: 19, Roll no: 04}; // Object
+let undef; // Undefined
+let nul = null; // Null
+let sym = Symbol("id"); // Symbol</code></pre>
+
+                <h3>Comments</h3>
+                <p>Comments are used to explain code and are ignored by the JavaScript engine. There are single-line and multi-line comments.</p>
+                <h4>Example:</h4>
+                <pre><code>// This is a single-line comment
+
+/*
+This is a
+multi-line comment
+*/</code></pre>
+
+                <h3>Identifier Rules</h3>
+                <p>Identifiers are names given to variables, functions, etc. The rules for identifiers are:</p>
+                <ul>
+                    <li>Must start with a letter, underscore (<code>_</code>), or dollar sign (<code>$</code>).</li>
+                    <li>Subsequent characters can be letters, digits, underscores, or dollar signs.</li>
+                    <li>Cannot be a reserved keyword.</li>
+                </ul>
+                <h4>Example:</h4>
+                <pre><code>let _name = "Aryan jha";
+let $age = 19;
+let user1 = "Raj";</code></pre>
+
+                <h3>Operators and Precedence</h3>
+                <p>Operators are used to perform operations on variables and values. Operator precedence determines the order in which operators are evaluated.</p>
+                <h4>Example:</h4>
+                <pre><code>let x = 5;
+let y = 10;
+let z = x + y * 2; // Multiplication (*) has higher precedence than addition (+)</code></pre>
+
+                <h4>Operator Precedence Table:</h4>
+                <ol>
+                    <li>Parentheses <code>()</code></li>
+                    <li>Increment/Decrement <code>++</code> <code>--</code></li>
+                    <li>Multiplication/Division/Modulus <code>*</code> <code>/</code> <code>%</code></li>
+                    <li>Addition/Subtraction <code>+</code> <code>-</code></li>
+                    <li>Relational <code>&lt;</code> <code>&lt;=</code> <code>&gt;</code> <code>&gt;=</code></li>
+                    <li>Equality <code>==</code> <code>!=</code> <code>===</code> <code>!==</code></li>
+                    <li>Logical AND <code>&&</code></li>
+                    <li>Logical OR <code>||</code></li>
+                    <li>Assignment <code>=</code> <code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code></li>
+                </ol>
+            </section>
+        </main>
+    <!-- ...existing code... -->
+</body>
+</html>
